@@ -1,0 +1,43 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon node companion server.js",
+    "deploy": "pm2 startOrReload ecosystem.config.js --update-env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@uppy/companion": "^2.5.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-session-sequelize": "^6.0.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.1.1",
+    "formidable": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mailgun-js": "^0.22.0",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.4",
+    "nodemon": "^1.19.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "publitio_js_sdk": "^1.1.1",
+    "sequelize": "^4.41.2",
+    "shortid": "^2.2.14",
+    "slugify": "^1.3.4",
+    "string-strip-html": "^4.1.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
