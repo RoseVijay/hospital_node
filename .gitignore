@@ -1,15 +1,12 @@
 node_modules
 /.pnp
 .pnp.js
-.env
 /package-lock.json
 /media
 # testing
 /coverage
-
 # production
 /build
-/config/config.json
 # misc
 .DS_Store
 .env.local

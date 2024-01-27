@@ -1,0 +1,24 @@
+{
+    "development": {
+      "username": "admin",
+      "password": "password",
+      "database": "myproject",
+      "host": "parvathyhomecare.ctyme06sa802.ap-south-1.rds.amazonaws.com",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "admin",
+      "password": "password",
+      "database": "myproject",
+      "host": "parvathyhomecare.ctyme06sa802.ap-south-1.rds.amazonaws.com",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "admin",
+      "password": "password",
+      "database": "myproject",
+      "host": "parvathyhomecare.ctyme06sa802.ap-south-1.rds.amazonaws.com",
+      "dialect": "mysql"
+    }
+  }
+  
