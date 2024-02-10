@@ -5,7 +5,7 @@ const sequelize = new Sequelize(
   process.env.DATABASE_USER,
   process.env.DATABASE_PASS,
   {
-    host: "parvathyhomecare.ctyme06sa802.ap-south-1.rds.amazonaws.com",
+    host: "localhost",
     dialect: "mysql",
     operatorsAliases: false,
     define: {
@@ -13,5 +13,5 @@ const sequelize = new Sequelize(
   }
   }
 );
-
+// server_host_DB = parvathyhomecare.ctyme06sa802.ap-south-1.rds.amazonaws.com
 module.exports = sequelize;

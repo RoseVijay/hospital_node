@@ -9,6 +9,8 @@ const sequelize = require("./config/keys");
 require("dotenv").config();
 // bring routes
 const recorderRoutes = require("./routes/recorder");
+const razorpayRoutes = require("./routes/razorpay");
+const userRoutes = require("./routes/user");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const companion = require("@uppy/companion");
 // app
@@ -60,6 +62,8 @@ app.use(function (req, res, next) {
 
 // routes middleware
 app.use(process.env.APIPATH + "/getProductDetails", recorderRoutes);
+app.use(process.env.APIPATH + "/razorpay", razorpayRoutes);
+app.use(process.env.APIPATH + "/getUser", userRoutes);
 // app.use(companion.app(options));
 
 // port
