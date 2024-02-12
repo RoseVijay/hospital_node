@@ -26,11 +26,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING(150),
         allowNull: false,
       },
-      razorpay_key: {
-        type: DataTypes.STRING(150),
-        allowNull: false,
-      },
-      razorpay_secret_key: {
+      phone: {
         type: DataTypes.STRING(150),
         allowNull: false,
       },
