@@ -23,6 +23,18 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING(150),
         allowNull: false,
       },
+      discription: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
+      reportTime: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
+      fastingTime: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
       image: {
         type: DataTypes.STRING(150),
         allowNull: false,
@@ -37,6 +49,30 @@ module.exports = (sequelize, DataTypes) => {
       },
       discount: {
         type: DataTypes.STRING(150),
+        allowNull: false,
+      },
+      tests: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
+      testSample: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
+      gender: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
+      ageGroup: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
+      testDescription: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+      },
+      questionAnswer: {
+        type: DataTypes.STRING(255),
         allowNull: false,
       },
       createdAt: {
