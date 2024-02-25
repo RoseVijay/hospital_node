@@ -47,6 +47,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER(11),
         allowNull: false,
       },
+      related_product_id: {
+        type: DataTypes.INTEGER(11),
+        allowNull: false,
+      },
       discount: {
         type: DataTypes.STRING(150),
         allowNull: false,

@@ -28,11 +28,16 @@ exports.getProductDetails = async (req, res) => {
             DB.tests
               .findAll({ where: { product_id: req.params.id } })
               .then((tests) => {
+                DB.product_details
+                .findAll({ where: { related_product_id: req.params.id } })
+                .then((relatedProduct) => {
                 response["data"] = data;
                 response["questionAnswer"] = questionAnswer;
+                response["relatedProduct"] = relatedProduct;
                 response["tests"] = tests;
                 response["success_msg"] = "SUCCESS";
                 return res.status(200).json(response);
+                });
               })
           })
       });
